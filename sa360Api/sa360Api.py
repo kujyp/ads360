@@ -57,8 +57,13 @@ def Login():
          'type "Other".')
   print '6. Enter the cliend id and client secret below:'
   print ''
-  cid = raw_input('Client ID: ').strip()
-  csc = raw_input('Client secret: ').strip()
+
+  # cid = raw_input('Client ID: ').strip()
+  # csc = raw_input('Client secret: ').strip()
+  from credentials import cid, csc
+  print("cid={}, csc={}".format(cid, csc))
+
+
   print ''
   print ('Please open the following URL in the browser to authenticate. '
          'When successful, the browser will display a code. '
